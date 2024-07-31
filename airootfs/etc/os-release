@@ -1,0 +1,11 @@
+NAME="Odysen Desktop"
+PRETTY_NAME="Odysen Desktop"
+ID=odysen
+BUILD_ID=preview
+ANSI_COLOR="38;2;29;237;162"
+HOME_URL="https://odysen.space/"
+DOCUMENTATION_URL="https://wiki.odysen.space/"
+SUPPORT_URL="https://odysen.space/discord"
+BUG_REPORT_URL="https://github.com/odysen"
+PRIVACY_POLICY_URL="https://odysen.space/"
+LOGO=odysen-desktop
