@@ -356,6 +356,9 @@ _make_packages() {
         env -u TMPDIR pacstrap -C "${work_dir}/${buildmode}.pacman.conf" -c -G -M -- "${pacstrap_dir}" "${buildmode_pkg_list[@]}" &>/dev/null
     else
         env -u TMPDIR pacstrap -C "${work_dir}/${buildmode}.pacman.conf" -c -G -M -- "${pacstrap_dir}" "${buildmode_pkg_list[@]}"
+    # Courtesy of Adam Jafarov (theVakhovskeIsTaken) - thevakhovske@petalmail.com - thanks DOE
+        env -u TMPDIR arch-chroot "${pacstrap_dir}" chmod +x /etc/rootfs_customizer/rootfs_customizer.sh
+        env -u TMPDIR arch-chroot "${pacstrap_dir}" /etc/rootfs_customizer/rootfs_customizer.sh
     fi
 
     if [[ -v cert_list[0] ]]; then
