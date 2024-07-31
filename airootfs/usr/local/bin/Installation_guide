@@ -1,5 +1,0 @@
-#!/bin/sh
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
-
-exec lynx 'https://wiki.odysen.space/desktop/installation_guide'
