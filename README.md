@@ -28,6 +28,8 @@
     The `work_dir` is where the build process happens, the `out_dir` is where the final ISO image will be stored. Specify existing directories, or, if you don't want to make one yourself, specify a path to where it should be - `mkarchiso` will create it.
 
     `mkarchiso` should be run as root with either sudo or a root user.
+3. Optionally, test your ISO with `run_archiso -u -i /path/to/image.iso`
+    The Arch Wiki specifies which packages you need to install in order to be able to run it.
 
 <h2 id="contribute">📫 Contribute</h2>
 
