@@ -1,0 +1,1 @@
+./triggerManual.sh && sudo ./mkarchiso_ods -v -w ../work -o ../out .
