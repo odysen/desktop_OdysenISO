@@ -8,10 +8,10 @@
 #fi
 IMGNAME="_internal"
 iso_name="odysendesktop"
-iso_label="ODYSEN_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)$IMGNAME"
+iso_label="ODYSEN_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Odysen <https://odysen.space>"
 iso_application="Odysen Desktop Live/Rescue ISO"
-iso_version="starman_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)" # bringup 1.0 codename starman
+iso_version="starman_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d-%H%M)$IMGNAME" # bringup 1.0 codename starman
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
