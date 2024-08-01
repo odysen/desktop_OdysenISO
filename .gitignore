@@ -1,4 +1,4 @@
 .env
-triggerBuild
-triggerFail.sh
-triggerManual.sh
+./triggerBuild
+./triggerFail.sh
+./triggerManual.sh
