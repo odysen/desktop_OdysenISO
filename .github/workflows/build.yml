@@ -1,6 +1,9 @@
 name: Build an ISO
 
-on: [push, pull_request]
+on:
+    push:
+        branches: [ "main" ]
+    workflow_dispatch:
 
 env:
     TOKEN: ${{ secrets.CONSTELLATION_TOKEN }}
