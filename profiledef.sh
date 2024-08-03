@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
+set +u
 
-#if [ -n "$CI" ]; then
-#   IMGNAME="_ci_roller"
-#else
-#   IMGNAME="_homemade"
-#fi
-IMGNAME="_internal"
+if [ -n "$CI" ]; then
+   IMGNAME="_ci-roller"
+else
+   IMGNAME="_homemade"
+fi
+
 iso_name="odysendesktop"
 iso_label="ODYSEN_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Odysen <https://odysen.space>"
