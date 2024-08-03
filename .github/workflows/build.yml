@@ -24,7 +24,8 @@ jobs:
             
             - name: Install tools
               run: |
-                  cp -f pacman.conf /etc/pacman.conf
+                  rm /etc/pacman.conf
+                  cp pacman.conf /etc/pacman.conf
                   pacman --noconfirm -Syyu
                   pacman --noconfirm -S archiso git mkodyseniso
             
