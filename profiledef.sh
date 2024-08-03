@@ -3,7 +3,7 @@
 set +u
 
 if [ -n "$CI" ]; then
-   IMGNAME="_ci_roller"
+   IMGNAME="_ci-roller"
 else
    IMGNAME="_homemade"
 fi
