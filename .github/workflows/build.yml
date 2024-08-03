@@ -1,0 +1,38 @@
+name: Build an ISO
+
+on: [push, pull_request]
+
+env:
+    TOKEN: ${{ secrets.CONSTELLATION_TOKEN }}
+    HOST: ${{ secrets.CONSTELLATION_HOST }}
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        container:
+            image: archlinux:latest
+            options: --privileged
+        steps:
+            - uses: actions/checkout@v2
+            - name: Prepare keyring
+              run: |
+                  pacman-key --init
+                  pacman --noconfirm -Sy archlinux-keyring
+            
+            - name: Install tools
+              run: |
+                  cp -f pacman.conf /etc/pacman.conf
+                  pacman --noconfirm -Syyu
+                  pacman --noconfirm -S archiso git mkodyseniso
+            
+            - name: Build ISO
+              run: |
+                  mkodyseniso -v .
+
+            - name: Upload ISO
+              run: |
+                  echo "Uploading to Constellation..."
+                  ls out
+                  sleep 4
+                  curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ env.TOKEN }}" -F "file=@$(find out | grep .iso)" ${{ env.HOST }}/api/upload
+                  
