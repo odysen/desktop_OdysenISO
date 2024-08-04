@@ -5,6 +5,10 @@ on:
         branches: [ "main" ]
     workflow_dispatch:
 
+env:
+    TOKEN: ${{ secrets.CONSTELLATION_TOKEN }}
+    HOST: ${{ secrets.CONSTELLATION_HOST }}
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -34,5 +38,5 @@ jobs:
                   echo "Uploading to Constellation..."
                   ls out
                   sleep 4
-                  curl bashupload.com -T (ls out | grep .iso)
+                  curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ env.TOKEN }}" -F "file=@$(find out | grep .iso)" ${{ env.HOST }}/api/upload
                   
