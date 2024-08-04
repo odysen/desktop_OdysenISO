@@ -27,7 +27,7 @@ jobs:
                   rm /etc/pacman.conf
                   cp pacman.conf /etc/pacman.conf
                   pacman --noconfirm -Syyu
-                  pacman --noconfirm -S archiso git mkodyseniso
+                  pacman --noconfirm -S archiso git mkodyseniso jq
             
             - name: Build ISO
               run: |
