@@ -38,5 +38,5 @@ jobs:
                   echo "Uploading to Constellation..."
                   ls out
                   sleep 4
-                  curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ env.TOKEN }}" -F "file=@$(find out | grep .iso)" ${{ env.HOST }}/api/upload
+                  curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ env.TOKEN }}" -H "Format: NAME" -H "Override-Domain: files.odysen.space" -F "file=@$(find out | grep .iso)" https://${{ env.HOST }}/api/upload
                   
