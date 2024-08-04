@@ -6,8 +6,9 @@ on:
     workflow_dispatch:
 
 env:
-    TOKEN: ${{ secrets.CONSTELLATION_TOKEN }}
-    HOST: ${{ secrets.CONSTELLATION_HOST }}
+    KEY: ${{ secrets.CDN_KEY }}
+    HOST: ${{ secrets.CDN_HOST }}
+    CIUUID: ${{ secrets.CDN_CIUUID }}
 
 jobs:
     build:
@@ -35,8 +36,8 @@ jobs:
 
             - name: Upload ISO
               run: |
-                  echo "Uploading to Constellation..."
+                  echo "Uploading to Odysen CI CDN..."
                   ls out
                   sleep 4
-                  curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ env.TOKEN }}" -H "Format: NAME" -H "Override-Domain: files.odysen.space" -F "file=@$(find out | grep .iso)" https://${{ env.HOST }}/api/upload
+                  curl -X POST -F "file[]=@$(find out | grep .iso)" -H "x-api-key: ${{ env.KEY }}" -H "albumuuid: ${{ env.CIUUID }}" https://${{ env.HOST }}/api/upload
                   
