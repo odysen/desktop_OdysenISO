@@ -192,7 +192,7 @@ xdg-user-dirs-gtk
 yelp
 
 # BROWSER
-firefox
+chromium
 
 # BLUETOOTH
 bluez
@@ -200,3 +200,6 @@ bluez-utils
 
 # FIREWALL
 firewalld
+
+# NETWORK
+networkmanager
