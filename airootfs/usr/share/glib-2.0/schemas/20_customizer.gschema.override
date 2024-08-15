@@ -1,2 +1,2 @@
-[org/gnome/desktop/background]
-picture-uri='file:///usr/share/backgrounds/ocean-l.svg'
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/gnome/ocean-l.svg'
