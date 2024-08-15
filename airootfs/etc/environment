@@ -4,4 +4,4 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 BROWSER=chromium
-EDITOR=nano
+EDITOR=micro
