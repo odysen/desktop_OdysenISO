@@ -18,5 +18,8 @@ echo "${LIVEOSUSER} ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/${LIVEOSUSER}
 # Add necessary groups to 'liveuser'
 usermod -aG wheel,rfkill ${LIVEOSUSER}
 
-# Enable GDM (GNOME Display Manager) service
-systemctl enable gdm
+# Enable GDM (GNOME Display Manager) service and NetworkManager
+systemctl enable gdm NetworkManager
+
+# Recompile schemas
+glib-compile-schemas /usr/share/glib-2.0/schemas
