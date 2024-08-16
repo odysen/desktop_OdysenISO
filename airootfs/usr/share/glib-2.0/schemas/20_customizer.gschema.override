@@ -1,2 +1,5 @@
 [org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/gnome/ocean-l.svg'
+picture-uri='file:///usr/share/backgrounds/gnome/ocean-d.svg'
+
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
