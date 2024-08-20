@@ -52,7 +52,7 @@ less
 lftp
 libfido2
 libusb-compat
-linux
+linux-zen
 linux-atm
 linux-firmware
 linux-firmware-marvell
@@ -161,6 +161,7 @@ gnome-software
 gnome-system-monitor
 gnome-text-editor
 gnome-tour
+gnome-tweaks
 gnome-user-docs
 gnome-user-share
 gnome-weather
