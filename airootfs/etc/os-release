@@ -1,6 +1,7 @@
 NAME="Odysen Desktop"
 PRETTY_NAME="Odysen Desktop"
 ID=odysen
+ID_LIKE=arch
 BUILD_ID=preview
 ANSI_COLOR="38;2;29;237;162"
 HOME_URL="https://odysen.space/"
