@@ -1,5 +1,6 @@
 #!/bin/zsh
 # Prepares ISO for packaging
+echo "==> Running ISO customization..."
 
 # Add a liveOS user
 ROOTPASS="config"
