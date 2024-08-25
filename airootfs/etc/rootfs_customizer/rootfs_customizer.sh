@@ -23,3 +23,9 @@ systemctl enable gdm NetworkManager
 
 # Recompile schemas
 glib-compile-schemas /usr/share/glib-2.0/schemas
+
+# Install libadwaita themes
+chmod +x /home/${LIVEOSUSER}/.themes/flat-remix-gtk-odysenui-dark/install.sh
+chmod +x /home/${LIVEOSUSER}/.themes/flat-remix-gtk-odysenui-light/install.sh
+./home/${LIVEOSUSER}/.themes/flat-remix-gtk-odysenui-darl/install.sh
+./home/${LIVEOSUSER}/.themes/flat-remix-gtk-odysenui-light/install.sh
