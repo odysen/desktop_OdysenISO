@@ -5,6 +5,7 @@ picture-uri-dark='file:///usr/share/backgrounds/gnome/ocean-d.svg'
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'
 font-name='Fixel Text 11'
+gtk-theme='flat-remix-gtk-odysenui-dark'
 
 [org.gnome.login-screen]
 logo='file:///usr/share/pixmaps/odysen-logo-text-dark.svg'
@@ -14,3 +15,6 @@ picture-uri='file:///usr/share/backgrounds/gnome/ocean-d.svg'
 
 [org.gnone.shell]
 enabled-extensions='['user-theme@gnome-shell-extensions.gcampax.github.com']'
+
+[org.gnome.shell.extensions.user-theme]
+name='flat-remix-odysenui-dark'
