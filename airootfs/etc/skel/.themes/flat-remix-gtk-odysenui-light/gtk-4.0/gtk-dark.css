@@ -75,13 +75,6 @@ windowcontrols {
       windowcontrols button.close image:hover {
         background-image: -gtk-scaled(url("assets/close.png"), url("assets/close@2.png")); }
 
-window.background {
-  background: linear-gradient(to bottom, alpha(@headerbar_bg_color, .8) 46px, @view_bg_color 46px); }
-
-window.background headerbar {
-  background-color: transparent;
-  color: alpha(@headerbar_fg_color, 2); }
-
 @define-color blue_1 #99c1f1;
 @define-color blue_2 #62a0ea;
 @define-color blue_3 #3584e4;

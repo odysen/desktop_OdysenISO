@@ -4398,7 +4398,7 @@ decoration {
     background-color: #13151a;
     border: solid 1px #13151a;
     border-radius: 0;
-    box-shadow: inset 0 0 0 3px rgba(35, 37, 46, 0.8), inset 0 1px rgba(238, 238, 236, 0.07); }
+    box-shadow: inset 0 0 0 3px #23252e, inset 0 1px rgba(238, 238, 236, 0.07); }
     .solid-csd decoration:backdrop {
       box-shadow: inset 0 0 0 3px #23252e, inset 0 1px rgba(238, 238, 236, 0.07); }
 
@@ -5151,7 +5151,7 @@ tabbar tab,
  * Base States *
  ***************/
 .background, .background:backdrop {
-  background: rgba(35, 37, 46, 0.999); }
+  background: #23252e; }
 
 /**********
  * Button *
@@ -5389,12 +5389,12 @@ scale highlight, progressbar progress {
  ***************/
 headerbar {
   border: none;
-  background: rgba(35, 37, 46, 0.8);
+  background: #23252e;
   box-shadow: inset 0 1px rgba(238, 238, 236, 0.07);
   color: white; }
   headerbar, headerbar:backdrop {
     box-shadow: none;
-    background: rgba(35, 37, 46, 0.8); }
+    background: #23252e; }
 
 .titlebar:not(headerbar) .title,
 headerbar .title {
@@ -5486,8 +5486,7 @@ headerbar button.titlebutton:not(.appmenu).close {
   headerbar button.titlebutton:not(.appmenu).maximize:backdrop,
   headerbar button.titlebutton:not(.appmenu).close:backdrop {
     background-color: #4e5468;
-    background-image: -gtk-scaled(url("assets/titlebutton.png"), url("assets/titlebutton@2.png"));
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2); }
+    background-image: -gtk-scaled(url("assets/titlebutton.png"), url("assets/titlebutton@2.png")); }
 
 .titlebar:not(headerbar) button.titlebutton:not(.appmenu).minimize,
 headerbar button.titlebutton:not(.appmenu).minimize {
@@ -5984,8 +5983,7 @@ decoration {
   border: 1px solid #23252e;
   border-top-width: 0;
   border-bottom-width: 2px;
-  background: transparent;
-  border-color: rgba(35, 37, 46, 0.8) rgba(35, 37, 46, 0.8) #23252e;
+  background: #23252e;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(19, 21, 26, 0.75); }
   decoration:backdrop {
     box-shadow: 0 2px 8px 0 transparent, 0 0 5px 3px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.75); }
@@ -6007,13 +6005,6 @@ decoration {
     border-width: 0;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
 
-window.unified, window.unified:backdrop {
-  background: linear-gradient(to bottom, rgba(35, 37, 46, 0.8) 40px, #23252e 40px); }
-  window.unified decoration, window.unified:backdrop decoration {
-    border: 0; }
-  window.unified headerbar, window.unified:backdrop headerbar {
-    background: transparent; }
-
 /* Nautilus */
 @define-color disk_space_unknown #383c4a;
 @define-color disk_space_used #1DEDA2;
@@ -6025,7 +6016,7 @@ filechooser.unified, filechooser.unified:backdrop,
   filechooser.unified > deck > box > headerbar, filechooser.unified:backdrop > deck > box > headerbar,
   .nautilus-window.unified > deck > box > headerbar,
   .nautilus-window.unified:backdrop > deck > box > headerbar {
-    background: rgba(35, 37, 46, 0.8); }
+    background: #23252e; }
 
 filechooser.csd.background, filechooser placessidebar list,
 .nautilus-window.csd.background,
@@ -6034,15 +6025,15 @@ filechooser.csd.background, filechooser placessidebar list,
 
 filechooser placessidebar.sidebar:dir(ltr),
 .nautilus-window placessidebar.sidebar:dir(ltr) {
-  background: linear-gradient(to right, rgba(8, 9, 11, 0.95) 41px, rgba(30, 33, 40, 0.95) 0); }
+  background: linear-gradient(to right, #08090b 41px, #1e2128 0); }
 
 filechooser placessidebar.sidebar:dir(rtl),
 .nautilus-window placessidebar.sidebar:dir(rtl) {
-  background: linear-gradient(to left, rgba(8, 9, 11, 0.95) 41px, rgba(30, 33, 40, 0.95) 0); }
+  background: linear-gradient(to left, #08090b 41px, #1e2128 0); }
 
 filechooser placessidebar.sidebar:backdrop,
 .nautilus-window placessidebar.sidebar:backdrop {
-  background: image(rgba(30, 33, 40, 0.95)); }
+  background: image(#1e2128); }
 
 filechooser placessidebar.sidebar row.sidebar-row,
 .nautilus-window placessidebar.sidebar row.sidebar-row {
@@ -6099,7 +6090,7 @@ filechooser placessidebar.sidebar row.sidebar-row,
 .nautilus-window .path-bar-box {
   padding: 3px 4px;
   margin: -1px 0;
-  background: rgba(43, 50, 66, 0.7);
+  background: #2b3242;
   border-radius: 99px;
   box-shadow: inset 0 0 0 1px #13151a;
   border: 0; }
@@ -6146,7 +6137,7 @@ list.tweak-categories separator {
 
 /* XFCE4 PANEL */
 .xfce4-panel.background {
-  background: rgba(35, 37, 46, 0.8); }
+  background: #23252e; }
 
 .xfce4-panel button {
   border: 0;
@@ -6227,14 +6218,14 @@ wnck-pager {
 
 /* LightDM */
 .lightdm-gtk-greeter #panel_window {
-  background: rgba(35, 37, 46, 0.8);
+  background: #23252e;
   color: #eeeeec;
   text-shadow: none;
   -gtk-icon-shadow: none; }
 
 .lightdm-gtk-greeter #login_window {
   border: 0;
-  background-color: rgba(35, 37, 46, 0.8);
+  background-color: #23252e;
   border-radius: 6px;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15); }
   .lightdm-gtk-greeter #login_window entry {
@@ -6539,7 +6530,7 @@ XfdesktopIconView.rubberband {
     padding: 0; }
 
 .workspace-switcher .workspace-layout {
-  border: 0 solid rgba(35, 37, 46, 0.8); }
+  border: 0 solid #23252e; }
   .top .workspace-switcher .workspace-layout:dir(ltr), .bottom .workspace-switcher .workspace-layout:dir(ltr) {
     border-left-width: 1px; }
   .top .workspace-switcher .workspace-layout:dir(rtl), .bottom .workspace-switcher .workspace-layout:dir(rtl) {
@@ -6549,7 +6540,7 @@ XfdesktopIconView.rubberband {
 
 .workspace-switcher .workspace-item,
 .workspace-switcher .workspace-add-button {
-  border: 0 solid rgba(24, 26, 32, 0.8); }
+  border: 0 solid #181a20; }
   .top .workspace-switcher .workspace-item:dir(ltr), .bottom .workspace-switcher .workspace-item:dir(ltr), .top .workspace-switcher .workspace-add-button:dir(ltr), .bottom .workspace-switcher .workspace-add-button:dir(ltr) {
     border-right-width: 1px; }
   .top .workspace-switcher .workspace-item:dir(rtl), .bottom .workspace-switcher .workspace-item:dir(rtl), .top .workspace-switcher .workspace-add-button:dir(rtl), .bottom .workspace-switcher .workspace-add-button:dir(rtl) {
@@ -6558,7 +6549,7 @@ XfdesktopIconView.rubberband {
     border-bottom-width: 1px; }
 
 .workspace-switcher .workspace-item.current-workspace {
-  background-color: rgba(24, 26, 32, 0.8); }
+  background-color: #181a20; }
 
 .workspace-switcher .workspace-add-button:hover {
   box-shadow: none; }

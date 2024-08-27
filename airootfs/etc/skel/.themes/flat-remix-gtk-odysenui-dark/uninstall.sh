@@ -1,6 +1,6 @@
 #!/bin/sh
 
-theme=Flat-Remix-GTK-ODYSENUI-Dark
+theme=Flat-Remix-GTK-ODYSENUI-Darkest
 
 rm -rf ~/.config/gtk-4.0/gtk.css \
        ~/.config/gtk-4.0/assets \
