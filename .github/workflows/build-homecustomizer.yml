@@ -1,0 +1,41 @@
+name: Build an ISO (mkodyseniso-hc)
+
+on:
+    workflow_dispatch:
+
+env:
+    KEY: ${{ secrets.CDN_KEY }}
+    HOST: ${{ secrets.CDN_HOST }}
+    CIUUID: ${{ secrets.CDN_CIUUID }}
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        container:
+            image: archlinux:latest
+            options: --privileged
+        steps:
+            - uses: actions/checkout@v2
+            - name: Prepare keyring
+              run: |
+                  pacman-key --init
+                  pacman --noconfirm -Sy archlinux-keyring
+            
+            - name: Install tools
+              run: |
+                  rm /etc/pacman.conf
+                  cp pacman.conf /etc/pacman.conf
+                  pacman --noconfirm -Syyu
+                  pacman --noconfirm -S archiso git mkodyseniso-hc jq
+            
+            - name: Build ISO
+              run: |
+                  mkodyseniso-hc -v .
+
+            - name: Upload ISO
+              run: |
+                  echo "Uploading to Odysen CI CDN..."
+                  ls out
+                  sleep 4
+                  curl -X POST -F "file[]=@$(find out | grep .iso)" -H "x-api-key: ${{ env.KEY }}" -H "albumuuid: ${{ env.CIUUID }}" https://${{ env.HOST }}/api/upload
+                  
