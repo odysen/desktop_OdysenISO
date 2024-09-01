@@ -194,6 +194,7 @@ yelp
 
 # BROWSER
 chromium
+ca-certificates
 
 # BLUETOOTH
 bluez
