@@ -1,1 +1,1 @@
-touch customized
+touch /home/liveuser/customized
