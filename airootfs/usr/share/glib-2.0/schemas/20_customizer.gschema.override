@@ -14,7 +14,7 @@ logo='file:///usr/share/pixmaps/odysen-logo-text-dark.svg'
 picture-uri='file:///usr/share/backgrounds/gnome/ocean-d.svg'
 
 [org.gnome.shell]
-enabled-extensions="['user-theme@gnome-shell-extensions.gcampax.github.com']"
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com']
 
 [org.gnome.shell.extensions.user-theme]
 name='flat-remix-odysenui-dark'
