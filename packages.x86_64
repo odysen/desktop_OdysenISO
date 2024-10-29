@@ -1,5 +1,4 @@
 # BASE
-alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
@@ -25,7 +24,6 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
-espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -55,7 +53,6 @@ linux
 linux-atm
 linux-firmware
 linux-firmware-marvell
-livecd-sounds
 lsscsi
 lvm2
 lynx
