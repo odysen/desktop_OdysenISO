@@ -1,6 +1,8 @@
-name: Build an ISO (mkodyseniso-hc)
+name: Build an ISO (Experimental tmpfs)
 
 on:
+    push:
+        branches: [ "main" ]
     workflow_dispatch:
 
 env:
@@ -26,11 +28,11 @@ jobs:
                   rm /etc/pacman.conf
                   cp pacman.conf /etc/pacman.conf
                   pacman --noconfirm -Syyu
-                  pacman --noconfirm -S archiso git mkodyseniso-hc jq
+                  pacman --noconfirm -S archiso git mkodyseniso jq
             
             - name: Build ISO
               run: |
-                  mkodyseniso-hc -v .
+                  mkodyseniso -v -r -w /tmp/odyseniso-tmp -o out -m iso .
 
             - name: Upload ISO
               run: |

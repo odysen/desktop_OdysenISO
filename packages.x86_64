@@ -1,5 +1,4 @@
 # BASE
-alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
@@ -12,7 +11,6 @@ brltty
 broadcom-wl
 btrfs-progs
 clonezilla
-cloud-init
 cryptsetup
 darkhttpd
 ddrescue
@@ -26,14 +24,12 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
-espeakup
 ethtool
 exfatprogs
 f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
-gnu-netcat
 gpart
 gpm
 gptfdisk
@@ -56,7 +52,6 @@ linux
 linux-atm
 linux-firmware
 linux-firmware-marvell
-livecd-sounds
 lsscsi
 lvm2
 lynx
@@ -64,8 +59,6 @@ man-db
 man-pages
 mc
 mdadm
-memtest86+
-memtest86+-efi
 micro
 mkinitcpio
 mkinitcpio-archiso
@@ -95,7 +88,6 @@ pv
 qemu-guest-agent
 refind
 reflector
-reiserfsprogs
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
