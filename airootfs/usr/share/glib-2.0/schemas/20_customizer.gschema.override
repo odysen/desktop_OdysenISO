@@ -1,6 +1,6 @@
 [org.gnome.desktop.background]
-picture-uri='file:///usr/share/backgrounds/gnome/sky-l.svg'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/sky-d.svg'
+picture-uri='file:///usr/share/backgrounds/gnome/sky-l.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/sky-d.jxl'
 
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'
