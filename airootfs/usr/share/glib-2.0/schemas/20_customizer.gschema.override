@@ -11,7 +11,7 @@ gtk-theme='flat-remix-gtk-odysenui-dark'
 logo='file:///usr/share/pixmaps/odysen-logo-text-dark.svg'
 
 [org.gnome.desktop.screensaver]
-picture-uri='file:///usr/share/backgrounds/gnome/ocean-d.svg'
+picture-uri='file:///usr/share/backgrounds/gnome/sky-d.svg'
 
 [org.gnome.shell]
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com']
