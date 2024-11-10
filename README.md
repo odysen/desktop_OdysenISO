@@ -12,7 +12,7 @@
 <h2 id="tech">💻 Technologies</h2>
 
 - Based on the `releng` archiso profile
-- `mkarchiso`
+- `mkodyseniso` & `mkarchiso`
 - Ships with GNOME
   
 <h2 id="started">🚀 Getting started</h2>
@@ -56,7 +56,7 @@ GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 ```
 
-Copy of the license can be found: <a href="https://github.com/odysen/infra_website/blob/main/LICENSE"> GPL-3.0 license</a>
+Copy of the license can be found: <a href="https://github.com/odysen/desktop_OdysenISO/blob/main/LICENSE"> GPL-3.0 license</a>
 
 <hr>
 
