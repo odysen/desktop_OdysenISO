@@ -7,7 +7,7 @@ color-scheme='prefer-dark'
 font-name='Fixel Text 11'
 
 [org.gnome.login-screen]
-logo='file:///usr/share/pixmaps/odysen-logo-text-dark.svg'
+logo='file:///usr/share/pixmaps/odysen-logo.svg'
 
 [org.gnome.desktop.screensaver]
 picture-uri='file:///usr/share/backgrounds/gnome/sky-d.svg'
