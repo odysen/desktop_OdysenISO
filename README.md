@@ -22,14 +22,17 @@
 - [archiso](https://wiki.archlinux.org/title/Archiso)
 - [Git](https://git-scm.com/)
 - [mkodyseniso](https://github.com/odysen/mkodyseniso)
+- [GNU Make](https://www.gnu.org/software/make/) (optional)
 
 Make sure to install both `archiso` and `mkodyseniso`!
 
 <h3>Building the ISO</h3>
 
 1. `git clone` the repository and `cd` into it
-2. `sudo mkodyseniso -v -w /path/to/work_dir -o /path/to/our_dir .`
+2. `sudo make` **OR** `sudo mkodyseniso -v -w /path/to/work_dir -o /path/to/out_dir`
     The `work_dir` is where the build process happens, the `out_dir` is where the final ISO image will be stored. Specify existing directories, or, if you don't want to make one yourself, specify a path to where it should be - `mkarchiso` will create it.
+    
+    To avoid any build issues, please set your work directory to somewhere in `/temp`.
 
     `mkodyseniso` should be run as root with either sudo or a root user.
 3. Optionally, test your ISO with `run_archiso -u -i /path/to/image.iso`
