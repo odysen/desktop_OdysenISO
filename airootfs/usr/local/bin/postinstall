@@ -23,8 +23,6 @@ default_image="/boot/initramfs-linux.img"
 EOF
 
 mkinitcpio -P || echo "ERR: Failed to generate new initramfs!"
-pacman -R mkinitcpio-archiso
-pacman -R calamares-odysen
-pacman -R calamares-config
+pacman -R --noconfirm mkinitcpio-archiso calamares-odysen calamares-config
 
 rm /usr/local/bin/postinstall
