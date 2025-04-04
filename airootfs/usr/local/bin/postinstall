@@ -25,4 +25,7 @@ EOF
 mkinitcpio -P || echo "ERR: Failed to generate new initramfs!"
 pacman -R --noconfirm mkinitcpio-archiso calamares-odysen calamares-config
 
+xdg-desktop-menu uninstall /usr/share/applications/calamares.desktop
+xdg-desktop-menu forceupdate
+
 rm /usr/local/bin/postinstall
