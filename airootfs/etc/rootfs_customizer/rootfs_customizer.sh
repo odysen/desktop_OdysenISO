@@ -24,3 +24,6 @@ systemctl enable gdm NetworkManager
 
 # Recompile schemas
 glib-compile-schemas /usr/share/glib-2.0/schemas
+
+# Mark postinstall script as executable
+chmod +x /usr/local/bin/postinstall
