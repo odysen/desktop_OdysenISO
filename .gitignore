@@ -1,2 +1,4 @@
 .env
 trigger*
+out/*
+out

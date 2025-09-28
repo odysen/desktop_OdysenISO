@@ -197,3 +197,10 @@ firewalld
 
 # NETWORK
 networkmanager
+
+# INSTALLER
+odysen/calamares-odysen
+odysen/calamares-config
+qt6-tools
+qt6-base
+kcrash
